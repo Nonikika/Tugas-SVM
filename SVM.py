@@ -1,0 +1,29 @@
+#KOODINGAN DATASET : THE MNIST DATABASE OF HANDWRITTEN DIGITS
+
+from sklearn.datasets import fetch_openml
+
+X, y = fetch_openml('mnist_784', data_home='./dataset/mnist', return_X_y=True)
+X.shape
+(70000, 784)
+import matplotlib.pyplot as plt
+import matplotib.cm as cm
+
+pos = 1
+for data in x[:8]:
+    plt.subplot((1, 8, pos)
+    plt.imshow((data.reshape((28, 28));
+                cmap=cm.Greys_r)
+    plt.axis('off')
+    pos += 1
+               
+plt.show()
+y[:8]
+# X_train = X[60000:]
+# X_train = y[60000:]
+# X_test = X[:60000]
+# X_test = y[:60000]
+
+X_train = x[:1000]
+y_train = y[:1000]
+X_test = X[69000:]
+y_test = y[69000:]
